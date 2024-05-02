@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "caviardreambold";
+    src: url(font/caviar_dreams/CaviarDreams_Bold.ttf);
+}
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white; 
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url(Photo/tawa-tawa10.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* margin: 0; */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    /* background: rgba(43, 42, 42, 0.295); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.title {
+    font-family:caviardreambold;;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+
+.navbar a:hover::before {
+    width: 100%;
+
+}
+
+
+.content {
+    /* border: 3px solid red; */
+    border-radius: 20px;
+    position: relative;
+    top: 130px;
+    height: 80vh;
+    margin: 0 150px;
+    padding: 15px;
+
+    background-color: rgba(0, 0, 0, 0.418);
+    letter-spacing: 3.45px;
+    word-spacing: 3px;
+    line-height: 22px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    overflow-y: auto;
+    text-align: justify;
+    scrollbar-gutter: stable;
+    
+}
+
+.Sn > * {
+  color: rgba(161, 161, 161, 0.733);
+}
+
+p {
+    padding: 15px 0 0 0;
+    text-indent: 50px;  
+}
+
+@media (max-width: 425px) {
+    body {
+        height: 100vh;
+        background: url(Photo/tawa-tawa10.webp) no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        /* margin: 0; */
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10px;
+        background: rgba(43, 42, 42, 0.295);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .title {
+        font-family:caviardreambold;;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+        font-weight: 900;
+    }
+    
+    .navbar a {
+        position: relative;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .navbar a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
+    
+    
+    .navbar a:hover::before {
+        width: 100%;
+    
+    }
+    
+    
+    .content {
+        /* border: 3px solid red; */
+        border-radius: 20px;
+        position: relative;
+        top: 130px;
+        height: 75vh;
+        margin: 0 10px;
+        padding: 15px;
+    
+        background-color: rgba(0, 0, 0, 0.418);
+        letter-spacing: 0;
+        word-spacing: 2px;
+        line-height: 22px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrapper {
+        overflow-y: auto;
+        text-align: justify;
+        scrollbar-gutter: stable;
+    }
+    
+    .wrapper h1 {
+        font-size: 20px;
+    }
+
+    .wrapper h2 {
+        font-size: 15px;
+    }
+    
+    p {
+        padding: 15px 0 0 0;
+        text-indent: 50px;  
+    }
+}
+
+
+
